@@ -59,7 +59,7 @@
   <li>NN:Not Null</li>
 </ui>
 
-<h5>)User</h5>
+<h5>User</h5>
 <table>
   <tr>
     <td>名稱</td>
