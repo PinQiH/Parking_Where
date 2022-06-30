@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+		<title>登入</title>
+
+		<link rel="icon" href="../icon/bitbug_favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="../icon/bitbug_favicon.ico" type="image/x-icon">
+
+		<style>
+			#whole {
+				width: 90%;
+				height:10%;
+				position:fixed;
+				top:2%;
+				margin-left:5%; 
+			}
+
+			#left {
+				width:10%;
+				height:10%;
+				position:fixed;
+				top:5%;
+				margin-left:5%; 
+			}
+
+			#title {
+				width:40%;
+				height:10%;
+				position:fixed;
+				top:0%;
+				margin-left: 23%;
+			}
+
+			#right {
+				width:10%;
+				height:10%;
+				position:fixed;
+				top:4%;
+				margin-left:77%;
+			}
+	
+			.buttom { 	
+				width:90%;
+				height:5%;
+				background-color:#F8F8F8;
+				border-radius:10px;
+				position:fixed;
+				bottom:5%;
+				margin-left:3.5%; 
+			}		
+
+			#theme {
+				position:relative;
+				top: 20vw;
+				overflow: visible;
+			}
+
+			#box {
+				height: 8%;
+				width: 100%;
+				vertical-align: middle;
+				padding-left: 10px;
+				padding-right:10px;
+				color: #666666;
+				border-style:solid;
+				border-radius: 10px;
+				border-width: 1px;
+				border-color: #EEEEEE;
+			}
+
+			#text {
+				height: 100%;
+				width:80%;
+				vertical-align: middle;
+				padding-left: 10px;
+				padding-right:10px;
+				color: #666666;
+			}
+
+			#form {
+				position:relative;
+				top: 20vw;
+				overflow: visible;
+			}
+
+			.but {
+				width:70%;
+				height:7%;
+				background-color:#408080;
+				border-radius:10px;
+				color:white;
+				position:fixed;
+				font-size:5vw;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script>alert('請先登入!')</script>
+
+		<div id="whole">
+			<div id="left"><a href="javascript:history.back()"><img src="../icon/left arrow.png" border="0" style="height:20px; width:20px;"></a></div>
+			<div id="title"><h2 style="text-align:center;"><img src="../icon/logo.png" style="height:80px; width:80px;"></h2></div>
+			<div id="right"></div>
+		</div>
+
+		<p id="theme" style="font-size: 7vw; text-align: center; font-weight: bold;">登入</p>
+
+		<form method="post" action="./登入.php" id="form">
+			<table align="center">
+				<tr>
+					<td>
+						<table id="box" align="center">
+							<tr>
+								<td><label for="email">Email</label></td>
+								<td colspan="2" align="left" id="text">
+									<input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" width="100%" required autofocus>
+									<label for="inputEmail"></label>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table id="box" align="center">
+							<tr>
+								<td><label for="password">密碼</label></td>
+								<td colspan="2" align="left" id="text"><input type="password" placeholder="Enter Password" name="password" id="password" required></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr></tr>
+				<tr>
+					<!--<td colspan="3" align="center"><a href="" style="color: #408080;">忘記密碼</a></td>-->
+				</tr>
+				<tr>
+					<td colspan="3" align="center">還沒有帳號? <a href="../註冊/註冊.html" style="color: #408080;">進行註冊</a></td>
+				</tr>
+				<tr>
+					<td colspan="3"><input class="but" type="submit" value="登入" name="submit" style="border: 1px none;"></td>
+				</tr>
+			</table>
+		</form>
+
+		<table class="buttom">
+			<tr>
+				<th><a href="../首頁/首頁(1.1.1).php"><img src="../icon/導覽列icon/search_灰.png" border="0" style="height:20px; width:20px;"></a></th>
+				<th><a href="../登入/登入.html"><img src="../icon/導覽列icon/location-pin_灰.png" border="0" style="height:20px; width:20px;"></a></th>
+				<th><a href="../登入/登入.html"><img src="../icon/導覽列icon/user_灰.png" border="0" style="height:20px; width:20px;"></a></th>
+			</tr>
+		</table>
+	</body>
+</html>
