@@ -3,7 +3,7 @@
 <ui>
   <li>程式語言: html, php</li>
   <li>伺服器: Apache</li>
-  <li>資料庫: MyAQL</li>
+  <li>資料庫: MySQL</li>
 </ui>
 
 <h3>第一章 系統描述</h3>
